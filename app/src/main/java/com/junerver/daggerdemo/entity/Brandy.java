@@ -1,5 +1,7 @@
 package com.junerver.daggerdemo.entity;
 
+import javax.inject.Inject;
+
 /**
  * Created by Junerver on 2016/12/21.
  * Feature: 白兰地类
@@ -9,6 +11,7 @@ public class Brandy {
     private Distiller mDistiller;
     private Wine mWine;
 
+    @Inject
     public Brandy(Distiller distiller, Wine wine) {
         mDistiller = distiller;
         mWine = wine;

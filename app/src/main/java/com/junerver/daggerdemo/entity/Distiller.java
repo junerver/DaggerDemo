@@ -9,12 +9,15 @@ import javax.inject.Inject;
  */
 public class Distiller {
 
+    private Heater mHeater;
+
     @Inject
-    public Distiller() {
+    public Distiller(Heater heater) {
+        mHeater = heater;
     }
 
     @Override
     public String toString() {
-        return "蒸馏器";
+        return "有"+mHeater.toString()+"的蒸馏器";
     }
 }

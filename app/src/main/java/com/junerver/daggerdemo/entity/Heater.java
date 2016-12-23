@@ -3,18 +3,18 @@ package com.junerver.daggerdemo.entity;
 import javax.inject.Inject;
 
 /**
- * Created by Junerver on 2016/12/21.
- * Feature: 发酵桶
+ * Created by Junerver on 2016/12/23.
+ * Feature: 加热器
  * Updated:
  */
-public class FermentBarrel {
+public class Heater {
 
     @Inject
-    public FermentBarrel() {
+    public Heater() {
     }
 
     @Override
     public String toString() {
-        return "这是一个发酵桶";
+        return "加热器";
     }
 }
