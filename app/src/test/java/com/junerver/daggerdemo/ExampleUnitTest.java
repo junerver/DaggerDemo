@@ -10,5 +10,6 @@ public class ExampleUnitTest {
     @Test
     public void testDagger() throws Exception {
         System.out.println(new TestDagger().toString());
+        System.out.println(new OtherTest().toString());
     }
 }

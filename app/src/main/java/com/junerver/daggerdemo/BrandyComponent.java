@@ -7,8 +7,10 @@ import dagger.Component;
  * Feature:
  * Updated:
  */
-@Component(modules = BrandyModule.class)
+@Component(modules = BrandyModule.class,dependencies = BaseComponent.class)
+@Lalala
 public interface BrandyComponent {
     void inject(MainActivity mainActivity);
     void inject(TestDagger testDagger);
+    void inject(OtherTest otherTest);
 }

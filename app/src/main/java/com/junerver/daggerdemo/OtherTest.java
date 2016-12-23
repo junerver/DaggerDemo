@@ -10,8 +10,7 @@ import javax.inject.Named;
  * Feature:
  * Updated:
  */
-public class TestDagger {
-
+public class OtherTest {
     @Inject
     Brandy mBrandy;
 
@@ -19,9 +18,13 @@ public class TestDagger {
     @Named("CabernetSauvignon")
     Brandy mCSBrandy;
 
-    public TestDagger() {
+    public OtherTest() {
 //        DaggerBrandyComponent.create().inject(this);
-        DaggerBrandyComponent.builder().baseComponent(Singleton.getInstance().getBaseComponent()).build().inject(this);
+        DaggerBrandyComponent
+                .builder()
+                .baseComponent(Singleton.getInstance().getBaseComponent())
+                .build()
+                .inject(this);
     }
 
     @Override
